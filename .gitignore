@@ -1,0 +1,15 @@
+# Reproduction assets live in Release attachments.
+*.zip
+*.tar.gz
+*.partial
+*.csr
+*.y
+*.so
+__pycache__/
+*.pyc
+results/
+frozen/llvm-bolt
+frozen/o3
+frozen/pgo
+frozen/new
+frozen/old

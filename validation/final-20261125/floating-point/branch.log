@@ -1,0 +1,35 @@
+BOLT-INFO: Target architecture: x86_64
+BOLT-INFO: BOLT version: <unknown>
+BOLT-INFO: first alloc address is 0x400000
+BOLT-INFO: creating new program header table at address 0x600000, offset 0x200000
+BOLT-INFO: enabling relocation mode
+BOLT-INFO: forcing -jump-tables=move for instrumentation
+BOLT-INFO: enabling lite mode
+BOLT-INFO: 0 out of 11 functions in the binary (0.0%) have non-empty execution profile
+BOLT-INSTRUMENTER: Number of indirect call site descriptors: 2
+BOLT-INSTRUMENTER: Number of indirect call target descriptors: 8
+BOLT-INSTRUMENTER: Number of function descriptors: 8
+BOLT-INSTRUMENTER: Number of branch counters: 31
+BOLT-INSTRUMENTER: Number of ST leaf node counters: 27
+BOLT-INSTRUMENTER: Number of direct call counters: 0
+BOLT-INSTRUMENTER: Total number of counters: 58
+BOLT-INSTRUMENTER: Total size of counters: 464 bytes (static alloc memory)
+BOLT-INSTRUMENTER: Total size of string table emitted: 241 bytes in file
+BOLT-INSTRUMENTER: Total size of descriptors: 3328 bytes in file
+BOLT-INSTRUMENTER: Profile will be saved to file /results/floating-point/branch.fdata
+BOLT-INFO: 20 instructions were shortened
+BOLT-INFO: removed 1 empty block
+BOLT-INFO: UCE removed 8 blocks and 433 bytes of code
+BOLT-INFO: padding code to 0xa00000 to accommodate hot text
+BOLT-INFO: output linked against instrumentation runtime library, lib entry point is 0xa0cb40
+BOLT-INFO: clear procedure is 0xa0bab0
+BOLT-INFO: patched build-id (flipped first and last bits)
+BOLT-INFO: setting _end to 0xa0f0e4
+BOLT-INFO: setting __bolt_runtime_start to 0xa0cb40
+BOLT-INFO: setting __bolt_runtime_fini to 0xa0cb90
+BOLT-INFO: setting __hot_start to 0x800000
+BOLT-INFO: setting __hot_end to 0x800b40
+BOLT-INFO: runtime library finalization was hooked via DT_FINI, set to 0xa0cb90
+BOLT-INFO: runtime library initialization was hooked via ELF Header Entry Point, set to 0xa0cb40
+BOLT-WARNING: debug info will be stripped from the binary. Use -update-debug-sections to keep it.
+BOLT-WARNING: ignoring symbol __bss_start at 0x404058, which lies outside .bss

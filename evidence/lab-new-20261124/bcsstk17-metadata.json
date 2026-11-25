@@ -1,0 +1,19 @@
+{
+  "name": "bcsstk17",
+  "rows": 10974,
+  "cols": 10974,
+  "nnz": 428650,
+  "row_quantiles": [
+    1.0,
+    45.0,
+    54.0,
+    60.0,
+    150.0
+  ],
+  "long_rows_fraction": 0.8907417532349189,
+  "group4_work_fraction": 0.9297375481161787,
+  "source": "https://math.nist.gov/pub/MatrixMarket2/Harwell-Boeing/bcsstruc2/bcsstk17.mtx.gz",
+  "conversion": "Original real coefficients, symmetric triangular storage expanded once; sorted CSR. No coefficient alteration, row permutation, padding or tiling.",
+  "raw_sha256": "105425dc922f5aaa4f2a7b52d707e946cbc3cc309accea11f5365a30528f49a5",
+  "csr_sha256": "8a75e585b73128a382e950533fff0c9842c1d5d8ecaf10a7b6333bf2f1d341a1"
+}

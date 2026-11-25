@@ -1,0 +1,42 @@
+{
+  "local": {
+    "selected": [
+      "bcsstk14",
+      "bcsstk15",
+      "bcsstk16",
+      "bcsstk17",
+      "msc00726"
+    ],
+    "selected_without_positive_validation_ci": [],
+    "calibration_wall_seconds_range": [
+      6.947159496998211,
+      12.876962471000297
+    ],
+    "amortization_calls_range": [
+      1138978,
+      18345132
+    ]
+  },
+  "server": {
+    "selected": [
+      "bcsstk14",
+      "bcsstk15",
+      "bcsstk16",
+      "bcsstk17",
+      "msc00726",
+      "s1rmt3m1",
+      "s2rmt3m1",
+      "s3rmt3m1",
+      "s3rmt3m3"
+    ],
+    "selected_without_positive_validation_ci": [],
+    "calibration_wall_seconds_range": [
+      11.415879394859076,
+      13.009996201843023
+    ],
+    "amortization_calls_range": [
+      828005,
+      6674987
+    ]
+  }
+}

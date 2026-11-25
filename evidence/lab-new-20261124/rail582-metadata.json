@@ -1,0 +1,19 @@
+{
+  "name": "rail582",
+  "rows": 582,
+  "cols": 55515,
+  "nnz": 401708,
+  "row_quantiles": [
+    1.0,
+    263.5,
+    1601.0999999999995,
+    6208.569999999988,
+    8919.0
+  ],
+  "long_rows_fraction": 0.9261168384879725,
+  "group4_work_fraction": 0.9958377727105261,
+  "source": "https://people.brunel.ac.uk/~mastjjb/jeb/orlib/files/rail582.gz",
+  "conversion": "OR-Library original incidence matrix; costs are not weights. CSC to CSR with ascending columns. No slack columns, reordering of rows, padding, tiling or transposition.",
+  "raw_sha256": "630c5e027ae0b392bc802aed012f6b83d2f8311c308880799f10a230f107c67e",
+  "csr_sha256": "bd005986c5418d879766f64b68f50583125fe0d8968692a54d9bba0e3096eea4"
+}

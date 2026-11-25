@@ -1,0 +1,22 @@
+{
+  "name": "bcsstk16",
+  "rows": 4884,
+  "nnz": 290378,
+  "row_quantiles": [
+    1.0,
+    54.0,
+    81.0,
+    81.0,
+    81.0
+  ],
+  "long_row_fraction": 0.984029484029484,
+  "vector_bytes": 39072,
+  "matches_predeclared_scope": true,
+  "csr_sha256": "cce8a57f92831aa858ba0e0d32b174b7f6cee2f7f3aba6ffd7b30bad39e3dbdf",
+  "raw_sha256": "3736579229a28286a952f3f993866958ad7af857843e04ee5c2ee3a9acc90ce8",
+  "conversion": "Original real coefficients; symmetric storage expanded once; sorted CSR, no padding, tiling, permutation or modification.",
+  "source": "https://math.nist.gov/pub/MatrixMarket2/Harwell-Boeing/bcsstruc2/bcsstk16.mtx.gz",
+  "full_vectors_equal": true,
+  "reference_bound_passed": true,
+  "output_sha256": "7ccfe0cde4619b97ffa01f858eed600f281a57173983fd9cd5966b8cf54f8d9d"
+}

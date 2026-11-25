@@ -1,0 +1,14 @@
+{
+  "bcsstk14": {
+    "full_vectors_equal_on_server": true,
+    "full_vector_sha256_matches_local": "8017266f972c53603a421cf39a97d52d07bd8c1555e9ad1003ac501aa43c02c4"
+  },
+  "bcsstk15": {
+    "full_vectors_equal_on_server": true,
+    "full_vector_sha256_matches_local": "b67193f7d661434ea618a2971efb0a148582208c9b673d96a9dcf38f120d1f6a"
+  },
+  "bcsstk16": {
+    "full_vectors_equal_on_server": true,
+    "full_vector_sha256_matches_local": "7ccfe0cde4619b97ffa01f858eed600f281a57173983fd9cd5966b8cf54f8d9d"
+  }
+}

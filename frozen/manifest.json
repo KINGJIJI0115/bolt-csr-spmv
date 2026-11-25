@@ -1,0 +1,33 @@
+{
+  "created_utc": "2026-11-24T06:33:39Z",
+  "strategy": {
+    "unroll": 4,
+    "min_trip_exclusive": 16,
+    "prefetch_distance": 0,
+    "tail": "1..4 original iterations",
+    "training": "rail2586, seed20771, reps2"
+  },
+  "files": {
+    "o3": "b54aae530be733198c6830bfee76f8bcf2901a1dd90629116b4581f72bc0e508",
+    "pgo": "5e637ac81b547893d9f2961aafcf647f8ab5c13284ec6f0bc27fb2536833d8bf",
+    "new": "ebd704ace993a9b1aa404b3f055c1e29a866c7d369f5580073c16aced9e1e991",
+    "old": "bb91c389895d8e8db7b6ea44154d484060ae60dd2211b115d78058d706831504",
+    "selected.json": "51a2afecbf1ff17c6526c6b455917409431210de4989931ef3254f4db88c0ba7",
+    "branch.fdata": "fd7c090847e5f2f55a8691dd6b27508d03b963f70bc18be1833603fb7d32f3e4",
+    "llvm-bolt": "ce31c7c63f9136111a301c315e84ceadfa09d795eb6fc99019d1be2fc0ba44f8",
+    "GroupedFmaLoop.h": "8b3b20569752e14682d1169f66715c6d7cd6a2139019312ff31936014371f8e9",
+    "driver.c": "dde95fcf1495677e330f6842dd63ee92f473875804de3359b535f05430bac6b0",
+    "csr_kernel.c": "84d11e1e174015e69b8973a8cbf242567ae5d06ee73dd855bd758359567a6cc0",
+    "collect.py": "01ee26c3441c01820441e46dac5ca020c5d952cec7e4650224a72e2c7dc19ea0"
+  },
+  "holdouts": [
+    "rail2536",
+    "rail507",
+    "rail582",
+    "bcsstk17"
+  ],
+  "environment": "Architecture:                            x86_64\nCPU op-mode(s):                          32-bit, 64-bit\nAddress sizes:                           42 bits physical, 48 bits virtual\nByte Order:                              Little Endian\nCPU(s):                                  24\nOn-line CPU(s) list:                     0-23\nVendor ID:                               GenuineIntel\nModel name:                              Intel(R) Core(TM) Ultra 9 275HX\nCPU family:                              6\nModel:                                   198\nThread(s) per core:                      1\nCore(s) per socket:                      24\nSocket(s):                               1\nStepping:                                2\nBogoMIPS:                                6144.00\nFlags:                                   fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc rep_good nopl xtopology tsc_reliable nonstop_tsc cpuid tsc_known_freq pni pclmulqdq vmx ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 xsaves avx_vnni vnmi umip waitpkg gfni vaes vpclmulqdq rdpid movdiri movdir64b fsrm md_clear serialize ibt flush_l1d arch_capabilities\nVirtualization:                          VT-x\nHypervisor vendor:                       Microsoft\nVirtualization type:                     full\nL1d cache:                               1.1 MiB (24 instances)\nL1i cache:                               1.5 MiB (24 instances)\nL2 cache:                                72 MiB (24 instances)\nL3 cache:                                36 MiB (1 instance)\nNUMA node(s):                            1\nNUMA node0 CPU(s):                       0-23\nVulnerability Gather data sampling:      Not affected\nVulnerability Ghostwrite:                Not affected\nVulnerability Indirect target selection: Not affected\nVulnerability Itlb multihit:             Not affected\nVulnerability L1tf:                      Not affected\nVulnerability Mds:                       Not affected\nVulnerability Meltdown:                  Not affected\nVulnerability Mmio stale data:           Not affected\nVulnerability Old microcode:             Not affected\nVulnerability Reg file data sampling:    Not affected\nVulnerability Retbleed:                  Mitigation; Enhanced IBRS\nVulnerability Spec rstack overflow:      Not affected\nVulnerability Spec store bypass:         Mitigation; Speculative Store Bypass disabled via prctl\nVulnerability Spectre v1:                Mitigation; usercopy/swapgs barriers and __user pointer sanitization\nVulnerability Spectre v2:                Mitigation; Enhanced / Automatic IBRS; IBPB conditional; PBRSB-eIBRS SW sequence; BHI BHI_DIS_S\nVulnerability Srbds:                     Not affected\nVulnerability Tsa:                       Not affected\nVulnerability Tsx async abort:           Not affected\nVulnerability Vmscape:                   Not affected\n",
+  "compiler": "gcc (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0\nCopyright (C) 2021 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
+  "old_delivery_tool_unchanged": "6768186cbb9e4b4e3d9d71d22290d4b8abe72130771452088cd73d4691dd152a",
+  "packaging_note": "Clean-base pass manager compiled/relinked; frozen input, pgo and new programs unchanged; generated executable sections verified identical."
+}

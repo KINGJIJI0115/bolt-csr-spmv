@@ -1,0 +1,42 @@
+[
+  {
+    "name": "s3rmt3m3",
+    "data_sha256_matches": true,
+    "four_full_vector_sha256_match_local": true
+  },
+  {
+    "name": "s1rmt3m1",
+    "data_sha256_matches": true,
+    "four_full_vector_sha256_match_local": true
+  },
+  {
+    "name": "s2rmt3m1",
+    "data_sha256_matches": true,
+    "four_full_vector_sha256_match_local": true
+  },
+  {
+    "name": "s3rmt3m1",
+    "data_sha256_matches": true,
+    "four_full_vector_sha256_match_local": true
+  },
+  {
+    "name": "s1rmq4m1",
+    "data_sha256_matches": true,
+    "four_full_vector_sha256_match_local": true
+  },
+  {
+    "name": "s2rmq4m1",
+    "data_sha256_matches": true,
+    "four_full_vector_sha256_match_local": true
+  },
+  {
+    "name": "s3rmq4m1",
+    "data_sha256_matches": true,
+    "four_full_vector_sha256_match_local": true
+  },
+  {
+    "name": "msc00726",
+    "data_sha256_matches": true,
+    "four_full_vector_sha256_match_local": true
+  }
+]

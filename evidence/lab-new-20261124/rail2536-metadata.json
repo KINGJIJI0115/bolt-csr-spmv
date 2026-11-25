@@ -1,0 +1,19 @@
+{
+  "name": "rail2536",
+  "rows": 2536,
+  "cols": 1081841,
+  "nnz": 10993311,
+  "row_quantiles": [
+    1.0,
+    2094.5,
+    11170.0,
+    30974.6,
+    86666.0
+  ],
+  "long_rows_fraction": 0.9798895899053628,
+  "group4_work_fraction": 0.9993928125930396,
+  "source": "https://people.brunel.ac.uk/~mastjjb/jeb/orlib/files/rail2536.gz",
+  "conversion": "OR-Library original incidence matrix; costs are not weights. CSC to CSR with ascending columns. No slack columns, reordering of rows, padding, tiling or transposition.",
+  "raw_sha256": "c3b6b90ce43661902c351ad273dacb4df0a917e73c1d4415d1ccf3309dc1088e",
+  "csr_sha256": "bb1abae461952b7f571dd4874508c271928cf47ac025b5290b905d3848dc453d"
+}

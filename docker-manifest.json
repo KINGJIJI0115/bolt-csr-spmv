@@ -1,0 +1,10 @@
+{
+  "tag": "bolt-loop-course:20261125-course-readable-final",
+  "image_id": "sha256:6aa5ca979ce5b8218874ca90a3a2dc755142d4379128741b12e2142e7271008b",
+  "archive": "course-auto-readable.docker.tar.gz",
+  "bytes": 991299975,
+  "sha256": "053ed7e1602b2ec7d16f3b98d862d05d7d8437a3e58a723d937b2d8c10a94fff",
+  "export_and_load_verified": true,
+  "image_content_matches_directory": true,
+  "timing_scope": "SpMV compute phase only; no end-to-end test"
+}

@@ -1,0 +1,10 @@
+{
+  "result": {
+    "floating_cases": 32,
+    "rounding_modes": 4,
+    "output_bits_and_exception_flags_equal": true
+  },
+  "source_sha256": "c9be1341bc4b6d9f328c85aa3bfeec97ac43509b52c6f9316392980d869fe471",
+  "tool_sha256": "63cecac4a944c20a18f18788f0eb51c63ce9429993ee231da6e58e684d37074e",
+  "selected_loops": 1
+}

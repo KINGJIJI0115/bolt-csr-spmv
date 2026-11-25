@@ -1,0 +1,16 @@
+{
+  "positive_all_four_vs_bolt": [
+    "s3rmt3m3",
+    "s1rmt3m1",
+    "s2rmt3m1",
+    "s3rmt3m1",
+    "msc00726"
+  ],
+  "regression_at_least_one_batch_vs_bolt": [
+    "s1rmq4m1",
+    "s2rmq4m1",
+    "s3rmq4m1"
+  ],
+  "matrix_count": 8,
+  "cross_machine_hashes_equal": true
+}

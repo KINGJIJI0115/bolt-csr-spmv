@@ -1,0 +1,70 @@
+{
+  "schema": "bolt-group-u4-d0-m16-h2-v1",
+  "single_threaded_training": true,
+  "source_sha256": "b54aae530be733198c6830bfee76f8bcf2901a1dd90629116b4581f72bc0e508",
+  "tool_sha256": "63cecac4a944c20a18f18788f0eb51c63ce9429993ee231da6e58e684d37074e",
+  "distance": 0,
+  "unroll": 4,
+  "loops": [
+    {
+      "index": 0,
+      "function": "spmv",
+      "offset": 56,
+      "counts": {
+        "entries": 7758,
+        "iterations": 24026328,
+        "prefetch_iterations": 24003444,
+        "plain_iterations": 22884,
+        "eligible_entries": 6879,
+        "odd_long_entries": 0,
+        "peel_exit_1": 126,
+        "peel_exit_2": 108,
+        "peel_exit_3": 90,
+        "peel_exit_4": 51,
+        "local_low": 0,
+        "local_high": 0,
+        "peel_exit_5": 27,
+        "peel_exit_6": 45,
+        "peel_exit_7": 54,
+        "peel_exit_8": 63,
+        "peel_exit_9": 66,
+        "peel_exit_10": 51,
+        "peel_exit_11": 45,
+        "peel_exit_12": 51,
+        "peel_exit_13": 30,
+        "peel_exit_14": 30,
+        "peel_exit_15": 33,
+        "peel_exit_16": 9
+      },
+      "selected": true
+    }
+  ],
+  "command": [
+    "/home/jiji/prefetch-indirect-pilot/real-csr-validation/data/rail2586.csr",
+    "2",
+    "20771"
+  ],
+  "selection": "target-machine two-batch calibration gate v1",
+  "calibration_binding": {
+    "matrix_sha256": "f174ffbfe7b7eb3767de71344d1d8db92df03d30dec744e2265fa0b0c867a18a",
+    "environment_sha256": "617f797d6e5e1feb75912ae1c48f016d9df42fc1a88b5711c256155f890ae01e",
+    "binary_sha256": {
+      "pgo": "5e637ac81b547893d9f2961aafcf647f8ab5c13284ec6f0bc27fb2536833d8bf",
+      "new": "ebd704ace993a9b1aa404b3f055c1e29a866c7d369f5580073c16aced9e1e991"
+    },
+    "policy": {
+      "calibration_seeds": [
+        32452843,
+        49979687
+      ],
+      "validation_seed": 67867967,
+      "rounds": 12,
+      "target_seconds": 0.25,
+      "max_reps": 30000,
+      "minimum_point_gain_pct": 2.0,
+      "minimum_ci_lower_pct": 1.0,
+      "bootstrap_samples": 4000,
+      "decision": "Both calibration batches must pass; validation cannot change selection."
+    }
+  }
+}

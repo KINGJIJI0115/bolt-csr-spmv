@@ -1,0 +1,16 @@
+{
+  "protected_files_unchanged": 182,
+  "image_files_matched": 156,
+  "unit_tests_passed": true,
+  "floating_point_combinations": 32,
+  "acceptance_status": "validated",
+  "selected": [
+    "bcsstk14",
+    "bcsstk15",
+    "bcsstk16",
+    "bcsstk17"
+  ],
+  "needs_review": [],
+  "image_id": "sha256:6aa5ca979ce5b8218874ca90a3a2dc755142d4379128741b12e2142e7271008b",
+  "archive_sha256": "053ed7e1602b2ec7d16f3b98d862d05d7d8437a3e58a723d937b2d8c10a94fff"
+}

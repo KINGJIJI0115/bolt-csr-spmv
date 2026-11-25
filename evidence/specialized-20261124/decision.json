@@ -1,0 +1,11 @@
+{
+  "all_four_batches_positive_vs_bolt": [
+    "bcsstk14",
+    "bcsstk15",
+    "bcsstk16"
+  ],
+  "all_three_in_predeclared_scope": true,
+  "same_frozen_binaries": true,
+  "same_output_hashes_across_machines": true,
+  "all_negative_results_retained": true
+}

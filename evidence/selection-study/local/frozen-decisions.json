@@ -1,0 +1,62 @@
+{
+  "bcsstk14": {
+    "enabled": true,
+    "chosen_binary": "new",
+    "calibration_wall_seconds": 11.060817178000434
+  },
+  "bcsstk15": {
+    "enabled": true,
+    "chosen_binary": "new",
+    "calibration_wall_seconds": 10.87228993700046
+  },
+  "bcsstk16": {
+    "enabled": true,
+    "chosen_binary": "new",
+    "calibration_wall_seconds": 10.900420103000215
+  },
+  "bcsstk17": {
+    "enabled": true,
+    "chosen_binary": "new",
+    "calibration_wall_seconds": 11.938362443997903
+  },
+  "msc00726": {
+    "enabled": true,
+    "chosen_binary": "new",
+    "calibration_wall_seconds": 11.53581693399974
+  },
+  "s1rmq4m1": {
+    "enabled": false,
+    "chosen_binary": "pgo",
+    "calibration_wall_seconds": 12.284374213002593
+  },
+  "s1rmt3m1": {
+    "enabled": false,
+    "chosen_binary": "pgo",
+    "calibration_wall_seconds": 8.3327495429985
+  },
+  "s2rmq4m1": {
+    "enabled": false,
+    "chosen_binary": "pgo",
+    "calibration_wall_seconds": 7.76944124199872
+  },
+  "s2rmt3m1": {
+    "enabled": false,
+    "chosen_binary": "pgo",
+    "calibration_wall_seconds": 6.947159496998211
+  },
+  "s3rmq4m1": {
+    "enabled": false,
+    "chosen_binary": "pgo",
+    "calibration_wall_seconds": 12.876962471000297
+  },
+  "s3rmt3m1": {
+    "enabled": false,
+    "chosen_binary": "pgo",
+    "calibration_wall_seconds": 7.865704171003017
+  },
+  "s3rmt3m3": {
+    "enabled": false,
+    "chosen_binary": "pgo",
+    "calibration_wall_seconds": 8.35749894699984
+  }
+}

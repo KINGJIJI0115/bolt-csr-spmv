@@ -1,0 +1,28 @@
+{
+  "training_counter_formula": {
+    "entries": 7758,
+    "iterations": 24026328,
+    "eligible_entries": 6879,
+    "prefetch_iterations": 24003444,
+    "plain_iterations": 22884
+  },
+  "guard_counter_formula": true,
+  "no_selected_loop_executable_sections_equal_pgo": true,
+  "wrong_binary_profile_rejected": true,
+  "rail2536": {
+    "all_four_full_output_vectors_bitwise_equal": true,
+    "sha256": "e4ec3bde48c318758a712858582f16a5ba173d5cb26225ce2e3ab2d48a46b023"
+  },
+  "rail507": {
+    "all_four_full_output_vectors_bitwise_equal": true,
+    "sha256": "3339e20d5d63c1210ebef66f11c6faf15b55b4fdc138d6abfd9d73e24e4ea601"
+  },
+  "rail582": {
+    "all_four_full_output_vectors_bitwise_equal": true,
+    "sha256": "8063627b4a5317f9beb5d1150766df00af935b64872115108b7f2e44b712f87f"
+  },
+  "bcsstk17": {
+    "all_four_full_output_vectors_bitwise_equal": true,
+    "sha256": "9834da569344650e516fafea3b5f30de18605d1062d404a2bae745bc9fc395ad"
+  }
+}

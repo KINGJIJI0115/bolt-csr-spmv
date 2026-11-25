@@ -1,0 +1,19 @@
+{
+  "name": "rail507",
+  "rows": 507,
+  "cols": 63009,
+  "nnz": 409349,
+  "row_quantiles": [
+    1.0,
+    499.0,
+    1994.8000000000004,
+    4386.78,
+    7753.0
+  ],
+  "long_rows_fraction": 0.9467455621301775,
+  "group4_work_fraction": 0.996694751910961,
+  "source": "https://people.brunel.ac.uk/~mastjjb/jeb/orlib/files/rail507.gz",
+  "conversion": "OR-Library original incidence matrix; costs are not weights. CSC to CSR with ascending columns. No slack columns, reordering of rows, padding, tiling or transposition.",
+  "raw_sha256": "1ea75c0f207cba68d2e7f5e369058107826c7473fb19b5b89c26ce3d03bbd19c",
+  "csr_sha256": "4ca9c5699d9fc286b95aef4dca4492f70144f16c2636e6107bf005a03e824efa"
+}

@@ -1,0 +1,12 @@
+{
+  "result": {
+    "guard_lengths": 4097,
+    "null_empty_rows": true,
+    "zero_rows": true,
+    "special_fp": 8,
+    "hash": "46fc9fe39ca9171e"
+  },
+  "source_sha256": "3a7e7fc26463ecd7cbc0898f1c80dd33e2d2220378e2cc4d8e1a491b07c3e3bb",
+  "tool_sha256": "63cecac4a944c20a18f18788f0eb51c63ce9429993ee231da6e58e684d37074e",
+  "selected_loops": 1
+}

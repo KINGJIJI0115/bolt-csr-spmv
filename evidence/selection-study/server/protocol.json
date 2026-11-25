@@ -1,0 +1,34 @@
+{
+  "calibration_seeds": [
+    32452843,
+    49979687
+  ],
+  "validation_seed": 67867967,
+  "rounds": 12,
+  "target_seconds": 0.25,
+  "max_reps": 30000,
+  "minimum_point_gain_pct": 2.0,
+  "minimum_ci_lower_pct": 1.0,
+  "bootstrap_samples": 4000,
+  "decision": "Both calibration batches must pass; validation cannot change selection.",
+  "data_sha256": {
+    "bcsstk14": "5e33573239e53e6de8c746a6bfc1ec2cda61deab53211dabf15f3e90c5ca3167",
+    "bcsstk15": "bd5c666492717576bed3fc053d1476668c9684c0b7274d565c69a1dc5fa7c35f",
+    "bcsstk16": "cce8a57f92831aa858ba0e0d32b174b7f6cee2f7f3aba6ffd7b30bad39e3dbdf",
+    "bcsstk17": "8a75e585b73128a382e950533fff0c9842c1d5d8ecaf10a7b6333bf2f1d341a1",
+    "msc00726": "6dc46807137cd6327aa3a328064c8b78a45022822c60f4e1fd6beff9b1e1ba0a",
+    "s1rmq4m1": "509049b3fe49065b4674d4a34c50fd270fa29f6c924600de798fefb6fc0afbbc",
+    "s1rmt3m1": "a5173b8db01948ab574e79df8ce34bbb2982a85185b341ad914ea6f1136d04d2",
+    "s2rmq4m1": "663fda3aa7dda49958258d21fad94d3319ee4df138c6e648fe46bcea41d5e4b6",
+    "s2rmt3m1": "2ea810af1d5d7e0f1c50b48bf864efed53af60b77e8d9c68bbe1b327d84ee8cf",
+    "s3rmq4m1": "a76b28aca5ab00e448b1fbc0bb53c8969cc9ce3c49185ce5ca2786974c913b59",
+    "s3rmt3m1": "f174ffbfe7b7eb3767de71344d1d8db92df03d30dec744e2265fa0b0c867a18a",
+    "s3rmt3m3": "148ff511c3e71a7c2f5fd26abc01abbf870f6ef2db65bb41cd62615b073688ea"
+  },
+  "binaries": {
+    "pgo": "5e637ac81b547893d9f2961aafcf647f8ab5c13284ec6f0bc27fb2536833d8bf",
+    "new": "ebd704ace993a9b1aa404b3f055c1e29a866c7d369f5580073c16aced9e1e991"
+  },
+  "environment": "Architecture:                    x86_64\nCPU op-mode(s):                  32-bit, 64-bit\nAddress sizes:                   46 bits physical, 48 bits virtual\nByte Order:                      Little Endian\nCPU(s):                          80\nOn-line CPU(s) list:             0-79\nVendor ID:                       GenuineIntel\nModel name:                      Intel(R) Xeon(R) Gold 6133 CPU @ 2.50GHz\nCPU family:                      6\nModel:                           85\nThread(s) per core:              2\nCore(s) per socket:              20\nSocket(s):                       2\nStepping:                        4\nCPU max MHz:                     3000.0000\nCPU min MHz:                     1000.0000\nBogoMIPS:                        5000.00\nFlags:                           fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l3 cdp_l3 invpcid_single pti intel_ppin ssbd mba ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm mpx rdt_a avx512f avx512dq rdseed adx smap clflushopt clwb intel_pt avx512cd avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts pku ospke md_clear flush_l1d arch_capabilities\nVirtualization:                  VT-x\nL1d cache:                       1.3 MiB (40 instances)\nL1i cache:                       1.3 MiB (40 instances)\nL2 cache:                        40 MiB (40 instances)\nL3 cache:                        55 MiB (2 instances)\nNUMA node(s):                    2\nNUMA node0 CPU(s):               0-19,40-59\nNUMA node1 CPU(s):               20-39,60-79\nVulnerability Itlb multihit:     KVM: Mitigation: VMX disabled\nVulnerability L1tf:              Mitigation; PTE Inversion; VMX conditional cache flushes, SMT vulnerable\nVulnerability Mds:               Mitigation; Clear CPU buffers; SMT vulnerable\nVulnerability Meltdown:          Mitigation; PTI\nVulnerability Mmio stale data:   Mitigation; Clear CPU buffers; SMT vulnerable\nVulnerability Retbleed:          Mitigation; IBRS\nVulnerability Spec store bypass: Mitigation; Speculative Store Bypass disabled via prctl\nVulnerability Spectre v1:        Mitigation; usercopy/swapgs barriers and __user pointer sanitization\nVulnerability Spectre v2:        Mitigation; IBRS, IBPB conditional, RSB filling, PBRSB-eIBRS Not affected\nVulnerability Srbds:             Not affected\nVulnerability Tsx async abort:   Mitigation; Clear CPU buffers; SMT vulnerable\n",
+  "python": "3.10.12"
+}

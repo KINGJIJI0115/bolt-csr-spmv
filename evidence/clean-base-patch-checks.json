@@ -1,0 +1,10 @@
+{
+  "base_commit": "37a8dd4eb2d22ffe4ed1f71b3f0b5aa6df7c7820",
+  "base_manager_sha256": "f915fa0f4b55628bdec50f835a670dd9ce2fb9b36be1b78eab6ff15ce5bfd2a7",
+  "patch_sha256": "f5444eb7d79bb46c4ddd2a4af0aaf843193d8686653ec347503f2930b6199e84",
+  "clean_base_apply_check": true,
+  "clean_base_manager_compile_and_relink": true,
+  "both_pgo_and_new_executable_sections_equal_frozen": true,
+  "tool_sha256": "ce31c7c63f9136111a301c315e84ceadfa09d795eb6fc99019d1be2fc0ba44f8",
+  "limitation": "Manager compiled against existing matching libraries, not a new complete LLVM build. Supersedes historical evidence/patch-checks.json, whose context included unrelated experimental passes."
+}

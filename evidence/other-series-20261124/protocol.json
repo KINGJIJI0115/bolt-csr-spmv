@@ -1,0 +1,32 @@
+{
+  "policy": {
+    "median_min": 24,
+    "median_max": 64,
+    "p99_max": 128,
+    "long_row_fraction_min": 0.8,
+    "vector_bytes_max": 262144
+  },
+  "candidates": [
+    "s3rmt3m3",
+    "s1rmt3m1",
+    "s2rmt3m1",
+    "s3rmt3m1",
+    "s1rmq4m1",
+    "s2rmq4m1",
+    "s3rmq4m1",
+    "msc00726"
+  ],
+  "selection": "All candidates satisfying frozen structural policy are timed, including negative results. No retraining or parameter adjustment.",
+  "seeds": [
+    104729,
+    130363
+  ],
+  "rounds": 15,
+  "variants": [
+    "o3",
+    "pgo",
+    "new",
+    "old"
+  ],
+  "explicit_zeros": "preserve original stored zeros; no elimination or padding"
+}

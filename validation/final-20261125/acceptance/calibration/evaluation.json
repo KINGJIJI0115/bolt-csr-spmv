@@ -1,0 +1,149 @@
+{
+  "decisions": {
+    "bcsstk14": {
+      "enabled": true,
+      "chosen_binary": "new",
+      "calibration_wall_seconds": 11.556337770999988,
+      "validation_gain_pct": 12.428896190603245,
+      "validation_ci95": [
+        12.00212351452572,
+        12.847922468255113
+      ],
+      "estimated_calls_to_amortize_calibration": 3521645,
+      "selected_policy_validation_gain_pct": 12.428896190603245
+    },
+    "bcsstk15": {
+      "enabled": true,
+      "chosen_binary": "new",
+      "calibration_wall_seconds": 8.650821486000012,
+      "validation_gain_pct": 7.497875356387029,
+      "validation_ci95": [
+        6.487622550476924,
+        8.28570263799423
+      ],
+      "estimated_calls_to_amortize_calibration": 2525157,
+      "selected_policy_validation_gain_pct": 7.497875356387029
+    },
+    "bcsstk16": {
+      "enabled": true,
+      "chosen_binary": "new",
+      "calibration_wall_seconds": 12.424346961999987,
+      "validation_gain_pct": 4.362413447333314,
+      "validation_ci95": [
+        4.119886745512069,
+        4.60622137741753
+      ],
+      "estimated_calls_to_amortize_calibration": 2100623,
+      "selected_policy_validation_gain_pct": 4.362413447333314
+    },
+    "bcsstk17": {
+      "enabled": true,
+      "chosen_binary": "new",
+      "calibration_wall_seconds": 12.174859423999976,
+      "validation_gain_pct": 4.808733270866183,
+      "validation_ci95": [
+        4.409044299522257,
+        5.2028967926722185
+      ],
+      "estimated_calls_to_amortize_calibration": 1397462,
+      "selected_policy_validation_gain_pct": 4.808733270866183
+    },
+    "msc00726": {
+      "enabled": false,
+      "chosen_binary": "pgo",
+      "calibration_wall_seconds": 11.510726581999961,
+      "validation_gain_pct": 3.7771446036815814,
+      "validation_ci95": [
+        3.3656787411871947,
+        4.1933270237393465
+      ],
+      "estimated_calls_to_amortize_calibration": null,
+      "selected_policy_validation_gain_pct": 0.0
+    },
+    "s1rmq4m1": {
+      "enabled": false,
+      "chosen_binary": "pgo",
+      "calibration_wall_seconds": 12.424783708000007,
+      "validation_gain_pct": -1.0807931778723523,
+      "validation_ci95": [
+        -2.1375394728835095,
+        0.027204295860550065
+      ],
+      "estimated_calls_to_amortize_calibration": null,
+      "selected_policy_validation_gain_pct": 0.0
+    },
+    "s1rmt3m1": {
+      "enabled": false,
+      "chosen_binary": "pgo",
+      "calibration_wall_seconds": 8.20241776399999,
+      "validation_gain_pct": 1.6863661781204797,
+      "validation_ci95": [
+        1.1305806249013672,
+        2.266881120337394
+      ],
+      "estimated_calls_to_amortize_calibration": null,
+      "selected_policy_validation_gain_pct": 0.0
+    },
+    "s2rmq4m1": {
+      "enabled": false,
+      "chosen_binary": "pgo",
+      "calibration_wall_seconds": 12.270166845999995,
+      "validation_gain_pct": -1.176474501469671,
+      "validation_ci95": [
+        -2.0074668634317616,
+        -0.3035537670725841
+      ],
+      "estimated_calls_to_amortize_calibration": null,
+      "selected_policy_validation_gain_pct": 0.0
+    },
+    "s2rmt3m1": {
+      "enabled": false,
+      "chosen_binary": "pgo",
+      "calibration_wall_seconds": 10.797212439999981,
+      "validation_gain_pct": 1.2080238742384064,
+      "validation_ci95": [
+        0.6662226416840666,
+        1.7831099825513785
+      ],
+      "estimated_calls_to_amortize_calibration": null,
+      "selected_policy_validation_gain_pct": 0.0
+    },
+    "s3rmq4m1": {
+      "enabled": false,
+      "chosen_binary": "pgo",
+      "calibration_wall_seconds": 12.893153749999982,
+      "validation_gain_pct": -0.7200241587097089,
+      "validation_ci95": [
+        -1.489996694030471,
+        0.01846779559618872
+      ],
+      "estimated_calls_to_amortize_calibration": null,
+      "selected_policy_validation_gain_pct": 0.0
+    },
+    "s3rmt3m1": {
+      "enabled": false,
+      "chosen_binary": "pgo",
+      "calibration_wall_seconds": 9.171260581000041,
+      "validation_gain_pct": 1.673381150631792,
+      "validation_ci95": [
+        1.2725737120973357,
+        2.094177396727337
+      ],
+      "estimated_calls_to_amortize_calibration": null,
+      "selected_policy_validation_gain_pct": 0.0
+    },
+    "s3rmt3m3": {
+      "enabled": false,
+      "chosen_binary": "pgo",
+      "calibration_wall_seconds": 8.93401196100001,
+      "validation_gain_pct": 0.5225563553083901,
+      "validation_ci95": [
+        -0.4970409681919197,
+        1.5381224740459443
+      ],
+      "estimated_calls_to_amortize_calibration": null,
+      "selected_policy_validation_gain_pct": 0.0
+    }
+  },
+  "total_wall_seconds": 198.202774004
+}

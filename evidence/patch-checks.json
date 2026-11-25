@@ -1,0 +1,8 @@
+{
+  "base_commit": "37a8dd4eb2d22ffe4ed1f71b3f0b5aa6df7c7820",
+  "git_apply_check": true,
+  "canonical_patch_compile_and_link": true,
+  "canonical_transformed_code_identical": true,
+  "canonical_tool_sha256": "63cecac4a944c20a18f18788f0eb51c63ce9429993ee231da6e58e684d37074e",
+  "patch_sha256": "4e637c0f9bbfa29bdc99b664285ef9f73d762255e6c89012d73f99d1539c4ed7"
+}
