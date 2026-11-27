@@ -2,7 +2,7 @@
   "schema": "bolt-group-u4-d0-m16-h2-v1",
   "single_threaded_training": true,
   "source_sha256": "b54aae530be733198c6830bfee76f8bcf2901a1dd90629116b4581f72bc0e508",
-  "tool_sha256": "ce31c7c63f9136111a301c315e84ceadfa09d795eb6fc99019d1be2fc0ba44f8",
+  "tool_sha256": "82f729e013c6dce71febd554662951df06e66f3c88e4111afddacf4e4c1e60d4",
   "distance": 0,
   "unroll": 4,
   "loops": [
@@ -34,7 +34,11 @@
         "peel_exit_13": 30,
         "peel_exit_14": 30,
         "peel_exit_15": 33,
-        "peel_exit_16": 9
+        "peel_exit_16": 9,
+        "long_tail_1": 1671,
+        "long_tail_2": 1818,
+        "long_tail_3": 1746,
+        "long_tail_4": 1644
       },
       "selected": true
     }
@@ -44,5 +48,5 @@
     "2",
     "20771"
   ],
-  "selection": "spmv scope; mean nonempty trip >=32 and grouped work fraction >=0.8; fixed before holdouts"
+  "selection": "not performed"
 }

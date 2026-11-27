@@ -1,4 +1,0 @@
-FROM bolt-loop-course:20261124-group4-experiment
-COPY . /opt/course/
-RUN chmod +x /opt/course/frozen/llvm-bolt /opt/course/frozen/o3 /opt/course/frozen/pgo /opt/course/frozen/new /opt/course/frozen/old
-ENTRYPOINT ["python3", "/opt/course/scripts/run.py"]

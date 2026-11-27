@@ -38,7 +38,7 @@ public:
       auto *Sym = BC.Ctx->getOrCreateSymbol(Name);
       OS.emitSymbolAttribute(Sym, llvm::MCSA_Global);
       OS.emitLabel(Sym);
-      for (unsigned K = 0; K < 24; ++K)
+      for (unsigned K = 0; K < 28; ++K)
         OS.emitIntValue(0, 8);
     }
   }
@@ -272,7 +272,16 @@ public:
         count(Long,16,{0x48,0x01,0x15,0,0,0,0});
         emit(Long,{0x48,0x89,0xca});emit(Long,{0x48,0x29,0xc2});
         emit(Long,{0x48,0x83,0xea,1});emit(Long,{0x48,0x81,0xe2,0x3,0x0,0x0,0x0});emit(Long,{0x48,0x81,0xc2,0x1,0x0,0x0,0x0});
-        count(Long,24,{0x48,0x01,0x15,0,0,0,0});branch(Long,Body);
+        count(Long,24,{0x48,0x01,0x15,0,0,0,0});
+        auto *TailTest = Long;
+        for (unsigned K=1; K<=4; ++K) {
+          Blocks.push_back(F.createBasicBlock()); auto *Hit=Blocks.back().get(); Hit->setCFIState(B->getCFIState());
+          Blocks.push_back(F.createBasicBlock()); auto *Next=Blocks.back().get(); Next->setCFIState(B->getCFIState());
+          auto C=mapped(dec({0x48,0x83,0xfa,0x01})); C.getOperand(C.getNumOperands()-1).setImm(K); TailTest->addInstruction(C);
+          branch(TailTest,Hit,4); branch(TailTest,Next);
+          count(Hit,192+(K-1)*8,{0x48,0xff,0x05,0,0,0,0}); branch(Hit,Body); TailTest=Next;
+        }
+        branch(TailTest,Body);
         BC.outs() << "TRIP-TRAIN " << Name << " function " << F.getPrintName()
                   << " offset " << B->getOffset() << "\n";
         F.insertBasicBlocks(B, std::move(Blocks));
@@ -299,10 +308,11 @@ namespace llvm {
 namespace bolt {
 class IndirectLoopPrefetch : public BinaryFunctionPass {
   std::string Mode, Profile;
+  bool PeelTail;
 
 public:
-  explicit IndirectLoopPrefetch(std::string M, std::string P)
-      : BinaryFunctionPass(false), Mode(M), Profile(P) {}
+  explicit IndirectLoopPrefetch(std::string M, std::string P, bool Peel = false)
+      : BinaryFunctionPass(false), Mode(M), Profile(P), PeelTail(Peel) {}
   const char *getName() const override { return "bounded-indirect-loop"; }
   Error runOnFunctions(BinaryContext &BC) override {
     if (Mode != "selected")
@@ -498,6 +508,12 @@ public:
         if (P > I || T != I - P || L > N || O > N - L || T < N || P % 4 ||
             P / 4 < L || N == 0)
           report_fatal_error("inconsistent trip counters");
+        uint64_t H[4]={0,0,0,0}, TailI=0;
+        if (PeelTail) {
+          uint64_t Sum=0;
+          for(unsigned K=0;K<4;++K) { H[K]=Read("long_tail_"+std::to_string(K+1)); if(H[K]>L-Sum || H[K]>(T-TailI)/(K+1)) report_fatal_error("invalid tail histogram"); Sum+=H[K]; TailI+=(K+1)*H[K]; }
+          if(Sum!=L || TailI>T || T-TailI<N-L) report_fatal_error("inconsistent tail histogram");
+        }
         if (!B->hasProfile() || B->getExecutionCount() != I)
           report_fatal_error("trip and branch profiles disagree");
         uint64_t Exits = 0;
@@ -524,6 +540,8 @@ public:
         std::vector<std::unique_ptr<BinaryBasicBlock>> Blocks;
         auto make=[&](){Blocks.push_back(F.createBasicBlock());auto *X=Blocks.back().get();X->setCFIState(B->getCFIState());return X;};
         auto *Plain=make(), *Body=make();
+        BinaryBasicBlock *Tail[4]={nullptr,nullptr,nullptr,nullptr};
+        if(PeelTail) for(auto &X:Tail) X=make();
         Plain->setAlignment(16);Plain->setAlignmentMaxBytes(15);
         Body->setAlignment(16);Body->setAlignmentMaxBytes(15);
         for(auto Inst:Original){
@@ -546,10 +564,21 @@ public:
         // Keep 1..U original iterations (or D+1..D+U for prefetch).
         // Never alter the original end register, and never reassociate FMA.
         emit(Body,{0x48,0x89,0xca});emit(Body,{0x48,0x29,0xc2});emit(Body,{0x48,0x81,0xfa,0x4,0x0,0x0,0x0});
-        branch(Body,Body,7);branch(Body,Plain);
+        branch(Body,Body,7);branch(Body,PeelTail ? Tail[0] : Plain);
+        if(PeelTail) for(unsigned K=0;K<4;++K) {
+          for(unsigned J=0;J<5;++J) Tail[K]->addInstruction(Original[J]);
+          if(K<3) { branch(Tail[K],Exit,4); branch(Tail[K],Tail[K+1]); }
+          else branch(Tail[K],Exit);
+        }
         B->setExecutionCount(N);Body->setExecutionCount(P/4);Plain->setExecutionCount(T);
         auto edge=[&](BinaryBasicBlock *X,BinaryBasicBlock *Y,uint64_t Count){X->getBranchInfo(*Y).Count=Count;X->getBranchInfo(*Y).MispredictedCount=0;};
-        edge(B,Plain,N-L);edge(B,Body,L);edge(Body,Body,P/4-L);edge(Body,Plain,L);edge(Plain,Plain,T-N);edge(Plain,Exit,N);
+        edge(B,Plain,N-L);edge(B,Body,L);edge(Body,Body,P/4-L);
+        if(PeelTail) {
+          edge(Body,Tail[0],L); Plain->setExecutionCount(T-TailI);
+          edge(Plain,Plain,T-TailI-(N-L));edge(Plain,Exit,N-L);
+          uint64_t Left=L;
+          for(unsigned K=0;K<4;++K) { Tail[K]->setExecutionCount(Left); edge(Tail[K],Exit,H[K]); Left-=H[K]; if(K<3) edge(Tail[K],Tail[K+1],Left); }
+        } else {edge(Body,Plain,L);edge(Plain,Plain,T-N);edge(Plain,Exit,N);}
         F.insertBasicBlocks(B,std::move(Blocks));
         BC.outs() << "TRIP-SELECT applied " << F.getPrintName() << " entries "
                   << N << " iterations " << I << "\n";

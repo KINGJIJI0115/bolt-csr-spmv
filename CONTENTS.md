@@ -1,15 +1,18 @@
-# 仓库与完整附件的区别
+# 仓库与完整附件内容对照
 
-| 内容 | 精简仓库 | Release 完整 ZIP |
-|---|---|---|
-| 报告、patch、源代码、复现脚本 | 保留 | 保留 |
-| 历史及本次实验 JSON、报告、文本日志 | 保留，包括负结果 | 保留 |
-| 矩阵 CSR、冻结可执行文件、Docker 归档 | 不放入 Git 历史 | 全部保留 |
-| 生成二进制、输出向量、插桩计数等中间产物 | 省略 | 原交付清单内全部保留 |
-| 临时 Python 缓存、内部审阅和备份 | 不包含 | 不包含 |
+| 内容类别 | 精简 GitHub 仓库 | Release 完整 ZIP（`v1.1.0`） |
+| :--- | :---: | :---: |
+| 设计文档、变更说明、完整 patch 与复现脚本 | 包含 | 包含 |
+| BOLT 优化源码（`frozen/GroupedFmaLoop.h`、`BinaryPassManager.cpp`）、测试内核与训练工具 | 包含 | 包含 |
+| 安全性测试 C 源码（`tests/fp/fp_guard.c`、`tests/guard/guard.c`） | 包含 | 包含 |
+| `v1.1.0` 两机与容器实验 JSON、`tail.asm` 及 `v1.0.0-reference` 全部历史实验记录 | 包含 | 包含 |
+| 19 个 CSR 测试矩阵、预构建 Docker 镜像归档、冻结 `llvm-bolt` 及测试 ELF 可执行文件 | 不放入 Git 历史 | 全部包含 |
+| 二进制输出向量（`*.y`）、Python 缓存与本地研发目录 | 不包含 | 仅原清单内交付项 |
 
-仓库 `frozen/` 只保留可审查的源码、Profile 与元数据，不能用它直接运行性能实验。`evidence/` 的历史脚本记录当时实验方法，部分使用开发环境路径；正式运行入口是完整包中的 `scripts/run.py`。
+## 校验说明
 
-`manifests/DELIVERY-SHA256SUMS.txt` 与 `delivery-content-manifest.json` 是原交付清单的存档，不要在精简仓库内直接执行完整包校验。仓库使用根目录 `REPOSITORY-SHA256SUMS.txt`。这些清单不校验自身。
+- 精简仓库根目录的 `REPOSITORY-SHA256SUMS.txt` 校验本仓库内全部文本、源码与实验记录文件（清单不校验自身）。
+- `manifests/DELIVERY-SHA256SUMS.txt` 与 `manifests/delivery-content-manifest.json` 是完整交付包校验清单的归档副本；校验下载并解压后的完整交付目录时，请在解压目录 `v1.1.0-rc1/` 内运行 `sha256sum -c SHA256SUMS.txt`。
+- `evidence/` 中保留了部分历史实验脚本用于完整溯源；正式便携复现请使用完整交付包中的 `scripts/run.py` 及预构建 Docker 镜像。
 
-完整 ZIP 保留已验收目录名和文件字节；额外的 `发布说明/` 提供下载说明与 LLVM 许可证，不改动已验收目录。基础镜像的系统组件及其许可文件保留在镜像内。
+- `manifests/RELEASE-WRAPPER-SHA256SUMS.txt` 是完整 ZIP 根目录发布说明的校验清单副本。运行包内部清单保持原样。

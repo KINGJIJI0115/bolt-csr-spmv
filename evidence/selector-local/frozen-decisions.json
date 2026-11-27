@@ -1,0 +1,82 @@
+{
+  "bcsstk13": {
+    "baseline_policy": "old",
+    "new_policy": "old",
+    "calibration_wall_seconds": 17.370655910999858
+  },
+  "bcsstk14": {
+    "baseline_policy": "old",
+    "new_policy": "old",
+    "calibration_wall_seconds": 16.376210219999848
+  },
+  "bcsstk15": {
+    "baseline_policy": "old",
+    "new_policy": "old",
+    "calibration_wall_seconds": 17.641288296000084
+  },
+  "bcsstk16": {
+    "baseline_policy": "old",
+    "new_policy": "old",
+    "calibration_wall_seconds": 19.47200245299973
+  },
+  "bcsstk17": {
+    "baseline_policy": "old",
+    "new_policy": "old",
+    "calibration_wall_seconds": 19.41637375900018
+  },
+  "bcsstk24": {
+    "baseline_policy": "old",
+    "new_policy": "old",
+    "calibration_wall_seconds": 18.593021495999892
+  },
+  "bcsstk27": {
+    "baseline_policy": "pgo",
+    "new_policy": "pgo",
+    "calibration_wall_seconds": 18.268207715000244
+  },
+  "bcsstk28": {
+    "baseline_policy": "old",
+    "new_policy": "old",
+    "calibration_wall_seconds": 19.41922398600036
+  },
+  "msc00726": {
+    "baseline_policy": "old",
+    "new_policy": "old",
+    "calibration_wall_seconds": 17.64698443899988
+  },
+  "s1rmq4m1": {
+    "baseline_policy": "pgo",
+    "new_policy": "pgo",
+    "calibration_wall_seconds": 20.07579036200059
+  },
+  "s1rmt3m1": {
+    "baseline_policy": "pgo",
+    "new_policy": "tail",
+    "calibration_wall_seconds": 19.615174357999877
+  },
+  "s2rmq4m1": {
+    "baseline_policy": "pgo",
+    "new_policy": "pgo",
+    "calibration_wall_seconds": 20.190469971999846
+  },
+  "s2rmt3m1": {
+    "baseline_policy": "pgo",
+    "new_policy": "tail",
+    "calibration_wall_seconds": 19.248182338000333
+  },
+  "s3rmq4m1": {
+    "baseline_policy": "pgo",
+    "new_policy": "pgo",
+    "calibration_wall_seconds": 20.160525129999314
+  },
+  "s3rmt3m1": {
+    "baseline_policy": "pgo",
+    "new_policy": "tail",
+    "calibration_wall_seconds": 19.73911827799975
+  },
+  "s3rmt3m3": {
+    "baseline_policy": "pgo",
+    "new_policy": "tail",
+    "calibration_wall_seconds": 18.769796917999884
+  }
+}

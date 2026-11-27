@@ -1,4 +1,4 @@
-# Reproduction assets live in Release attachments.
+# Large reproduction assets live in GitHub Release attachments.
 *.zip
 *.tar.gz
 *.partial
@@ -11,5 +11,9 @@ results/
 frozen/llvm-bolt
 frozen/o3
 frozen/pgo
-frozen/new
 frozen/old
+frozen/tail
+tests/fp/original
+tests/fp/tail
+tests/guard/original
+tests/guard/tail

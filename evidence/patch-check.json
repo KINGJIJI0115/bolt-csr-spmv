@@ -1,0 +1,6 @@
+{
+  "base_commit": "37a8dd4eb2d22ffe4ed1f71b3f0b5aa6df7c7820",
+  "read_from_git_object": true,
+  "git_apply_check": true,
+  "patched_sources_match_compiled_sources": true
+}

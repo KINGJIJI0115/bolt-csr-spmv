@@ -1,0 +1,18 @@
+{
+  "v1_original_files_verified": 335,
+  "published_repository_clean": true,
+  "cross_machine_binary_hashes_equal": true,
+  "default_container_acceptance": {
+    "status": "validated",
+    "needs_review": [],
+    "selected_tail": [
+      "bcsstk27",
+      "s1rmt3m1",
+      "s2rmt3m1",
+      "s3rmt3m1",
+      "s3rmt3m3"
+    ]
+  },
+  "scope": "SpMV kernel timing; no end-to-end application benchmark",
+  "release_status": "separate v1.1.0-rc1 candidate; v1.0.0 remains published"
+}

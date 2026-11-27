@@ -10,6 +10,7 @@
 
 | 矩阵 | 来源 |
 |---|---|
+| bcsstk13、24、27、28 | SuiteSparse Matrix Collection / HB，来源与哈希见 evidence/matrix-sources.json |
 | bcsstk14、15、16、17 | NIST Matrix Market / Harwell–Boeing bcsstruc2 |
 | s1rmt3m1、s2rmt3m1、s3rmt3m1、s3rmt3m3 | NIST Matrix Market / Cylshell |
 | s1rmq4m1、s2rmq4m1、s3rmq4m1 | NIST Matrix Market / Cylshell |

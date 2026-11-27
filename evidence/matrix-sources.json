@@ -1,0 +1,58 @@
+[
+  {
+    "name": "bcsstk13",
+    "url": "https://sparse.tamu.edu/MM/HB/bcsstk13.tar.gz",
+    "rows": 2003,
+    "cols": 2003,
+    "nnz": 83883,
+    "median": 36.0,
+    "p99": 92.0,
+    "long_fraction": 0.9510733899151274,
+    "eligible": true,
+    "raw_sha256": "8a100114d7a05226b82fe5107018ebe021c4f3fe5dd600022d744d00dab3572b",
+    "csr_sha256": "b5e838d0447e9027454d121d64bb086978a6e22c0a85c43cb65cc314b2f3b706",
+    "conversion": "mmread symmetric expansion once, sorted CSR, no padding or reordering"
+  },
+  {
+    "name": "bcsstk24",
+    "url": "https://sparse.tamu.edu/MM/HB/bcsstk24.tar.gz",
+    "rows": 3562,
+    "cols": 3562,
+    "nnz": 159910,
+    "median": 51.0,
+    "p99": 54.0,
+    "long_fraction": 0.9971925884334644,
+    "eligible": true,
+    "raw_sha256": "803f334a2e1acb388514be459d11190a60bffcb4c3106524d6d205bbdd2d673c",
+    "csr_sha256": "70da6a93cbabcda286a50aab40abe8620d01593e0bc567464f70114cb5f22249",
+    "conversion": "mmread symmetric expansion once, sorted CSR, no padding or reordering"
+  },
+  {
+    "name": "bcsstk27",
+    "url": "https://sparse.tamu.edu/MM/HB/bcsstk27.tar.gz",
+    "rows": 1224,
+    "cols": 1224,
+    "nnz": 56126,
+    "median": 48.0,
+    "p99": 54.0,
+    "long_fraction": 0.9967320261437909,
+    "eligible": true,
+    "raw_sha256": "b7d1100512223ac98ffce10b8d1f50c22562ac4321aa487f2808a4a196ab411b",
+    "csr_sha256": "c342071a5e5c8a26863b2c7b077ca529b1806d566ced38e57196bcd3bf5ff67c",
+    "conversion": "mmread symmetric expansion once, sorted CSR, no padding or reordering"
+  },
+  {
+    "name": "bcsstk28",
+    "url": "https://sparse.tamu.edu/MM/HB/bcsstk28.tar.gz",
+    "rows": 4410,
+    "cols": 4410,
+    "nnz": 219024,
+    "median": 54.0,
+    "p99": 78.0,
+    "long_fraction": 0.9981859410430839,
+    "eligible": true,
+    "raw_sha256": "4c84780a718264d5415e415cae22104fdc59a4b155a22c601c49bdbbdf060c71",
+    "csr_sha256": "81e7a5b9ff6563fcedb65212554013cf682b3a78087f85c1e954bcb86c3dacb5",
+    "conversion": "mmread symmetric expansion once, sorted CSR, no padding or reordering"
+  }
+]

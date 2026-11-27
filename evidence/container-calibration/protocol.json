@@ -1,0 +1,35 @@
+{
+  "calibration_seeds": [
+    86028121,
+    104395301
+  ],
+  "validation_seed": 122949829,
+  "rounds": 12,
+  "target_seconds": 0.25,
+  "max_reps": 30000,
+  "baseline_gate": [
+    2.0,
+    1.0
+  ],
+  "incremental_gate": [
+    1.0,
+    0.5
+  ],
+  "variants": [
+    "pgo",
+    "old",
+    "tail"
+  ],
+  "cpu": "2",
+  "held_out_from_tail_development": [
+    "bcsstk13",
+    "bcsstk24",
+    "bcsstk27",
+    "bcsstk28"
+  ],
+  "binary_sha256": {
+    "pgo": "f575de3d726aea32791935034b070ea64d374d39941b9baba910b89970d0eead",
+    "old": "f6cb699cc8b89e805b444524251ce268a1ccfb0a3f31214729de54c099924fd9",
+    "tail": "d592b5cac176544fd71851562c8deba83b3718ac6dfc00664725453c843addad"
+  }
+}

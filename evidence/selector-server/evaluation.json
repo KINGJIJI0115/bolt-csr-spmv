@@ -1,0 +1,225 @@
+{
+  "bcsstk13": {
+    "baseline_policy": "old",
+    "new_policy": "old",
+    "calibration_wall_seconds": 16.69292830489576,
+    "incremental_validation": {
+      "gain_pct": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "identical_binary": true
+    },
+    "needs_review": false
+  },
+  "bcsstk14": {
+    "baseline_policy": "old",
+    "new_policy": "old",
+    "calibration_wall_seconds": 13.570549607276917,
+    "incremental_validation": {
+      "gain_pct": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "identical_binary": true
+    },
+    "needs_review": false
+  },
+  "bcsstk15": {
+    "baseline_policy": "old",
+    "new_policy": "old",
+    "calibration_wall_seconds": 13.442920260131359,
+    "incremental_validation": {
+      "gain_pct": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "identical_binary": true
+    },
+    "needs_review": false
+  },
+  "bcsstk16": {
+    "baseline_policy": "old",
+    "new_policy": "old",
+    "calibration_wall_seconds": 13.965474786236882,
+    "incremental_validation": {
+      "gain_pct": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "identical_binary": true
+    },
+    "needs_review": false
+  },
+  "bcsstk17": {
+    "baseline_policy": "old",
+    "new_policy": "old",
+    "calibration_wall_seconds": 14.765510603785515,
+    "incremental_validation": {
+      "gain_pct": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "identical_binary": true
+    },
+    "needs_review": false
+  },
+  "bcsstk24": {
+    "baseline_policy": "pgo",
+    "new_policy": "pgo",
+    "calibration_wall_seconds": 13.848186869174242,
+    "incremental_validation": {
+      "gain_pct": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "identical_binary": true
+    },
+    "needs_review": false
+  },
+  "bcsstk27": {
+    "baseline_policy": "pgo",
+    "new_policy": "tail",
+    "calibration_wall_seconds": 13.652441004291177,
+    "incremental_validation": {
+      "gain_pct": 2.023343018011259,
+      "ci95": [
+        1.458378576982866,
+        2.4016809908194436
+      ]
+    },
+    "needs_review": false
+  },
+  "bcsstk28": {
+    "baseline_policy": "pgo",
+    "new_policy": "pgo",
+    "calibration_wall_seconds": 13.967876514419913,
+    "incremental_validation": {
+      "gain_pct": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "identical_binary": true
+    },
+    "needs_review": false
+  },
+  "msc00726": {
+    "baseline_policy": "old",
+    "new_policy": "old",
+    "calibration_wall_seconds": 12.670270249247551,
+    "incremental_validation": {
+      "gain_pct": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "identical_binary": true
+    },
+    "needs_review": false
+  },
+  "s1rmq4m1": {
+    "baseline_policy": "pgo",
+    "new_policy": "pgo",
+    "calibration_wall_seconds": 14.321961961686611,
+    "incremental_validation": {
+      "gain_pct": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "identical_binary": true
+    },
+    "needs_review": false
+  },
+  "s1rmt3m1": {
+    "baseline_policy": "old",
+    "new_policy": "old",
+    "calibration_wall_seconds": 13.856154264882207,
+    "incremental_validation": {
+      "gain_pct": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "identical_binary": true
+    },
+    "needs_review": false
+  },
+  "s2rmq4m1": {
+    "baseline_policy": "pgo",
+    "new_policy": "pgo",
+    "calibration_wall_seconds": 14.853829747065902,
+    "incremental_validation": {
+      "gain_pct": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "identical_binary": true
+    },
+    "needs_review": false
+  },
+  "s2rmt3m1": {
+    "baseline_policy": "old",
+    "new_policy": "old",
+    "calibration_wall_seconds": 13.475454103201628,
+    "incremental_validation": {
+      "gain_pct": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "identical_binary": true
+    },
+    "needs_review": false
+  },
+  "s3rmq4m1": {
+    "baseline_policy": "pgo",
+    "new_policy": "pgo",
+    "calibration_wall_seconds": 14.562738621607423,
+    "incremental_validation": {
+      "gain_pct": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "identical_binary": true
+    },
+    "needs_review": false
+  },
+  "s3rmt3m1": {
+    "baseline_policy": "old",
+    "new_policy": "old",
+    "calibration_wall_seconds": 13.723528048023582,
+    "incremental_validation": {
+      "gain_pct": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "identical_binary": true
+    },
+    "needs_review": false
+  },
+  "s3rmt3m3": {
+    "baseline_policy": "old",
+    "new_policy": "old",
+    "calibration_wall_seconds": 14.11256548203528,
+    "incremental_validation": {
+      "gain_pct": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "identical_binary": true
+    },
+    "needs_review": false
+  }
+}

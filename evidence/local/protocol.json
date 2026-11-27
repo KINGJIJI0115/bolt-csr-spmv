@@ -1,0 +1,27 @@
+{
+  "cases": [
+    "bcsstk16",
+    "bcsstk17",
+    "s1rmt3m1",
+    "s1rmq4m1"
+  ],
+  "variants": [
+    "pgo",
+    "old",
+    "tail"
+  ],
+  "rounds": 15,
+  "target_seconds": 0.3,
+  "max_reps": 30000,
+  "seeds": [
+    104729,
+    130363
+  ],
+  "cpu": "2",
+  "phase": "Candidate development screen; do not use as final independent acceptance",
+  "binaries": {
+    "pgo": "5e637ac81b547893d9f2961aafcf647f8ab5c13284ec6f0bc27fb2536833d8bf",
+    "old": "1ff7edb403b6c98fb2ed22502a89ec37d01ff5e696891b26918425b837aef0af",
+    "tail": "7fc746768fd8fc90ba9e82f2b88ed8098901fa98f22783c00b365ed1ad183542"
+  }
+}
